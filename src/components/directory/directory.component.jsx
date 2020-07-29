@@ -9,36 +9,44 @@ class Directory extends React.Component {
 		
 		this.state = {
 			sections: [
+				{
+			    title: 'vio',
+			    imageUrl: 'http://needscollective.com/e-commerce/img/landing.jpg',
+			    size: 'x-large',
+			    contentSize: 'large',
+			    id: 1,
+			    linkUrl: 'shop/hats'
+			  },
 		  	{
 			    title: 'hats',
-			    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-			    id: 1,
+			    imageUrl: 'http://needscollective.com/e-commerce/img/hats.png',
+			    id: 2,
 			    linkUrl: 'shop/hats'
 			  },
 			  {
 			    title: 'jackets',
-			    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-			    id: 2,
+			    imageUrl: 'http://needscollective.com/e-commerce/img/hoodies.png',
+			    id: 3,
 			    linkUrl: 'shop/jackets'
 			  },
 			  {
-			    title: 'sneakers',
-			    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-			    id: 3,
+			    title: 'pants',
+			    imageUrl: 'http://needscollective.com/e-commerce/img/pants.png',
+			    id: 4,
 			    linkUrl: 'shop/sneakers'
 			  },
 			  {
 			    title: 'womens',
 			    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
 			    size: 'large',
-			    id: 4,
+			    id: 5,
 			    linkUrl: 'shop/womens'
 			  },
 			  {
 			    title: 'mens',
 			    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
 			    size: 'large',
-			    id: 5,
+			    id: 6,
 			    linkUrl: 'shop/mens'
 			  }
 			]

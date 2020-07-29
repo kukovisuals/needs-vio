@@ -7,19 +7,19 @@ const SHOP_DATA = [
       {
         id: 1,
         name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+        imageUrl: 'http://needscollective.com/e-commerce/img/hats/ITP_RUNNING.png',
         price: 25
       },
       {
         id: 2,
         name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+        imageUrl: 'http://needscollective.com/e-commerce/img/hats/ITP_RUNNING_S.png',
         price: 18
       },
       {
         id: 3,
         name: 'Brown Cowboy',
-        imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+        imageUrl: 'http://needscollective.com/e-commerce/img/hats.png',
         price: 35
       },
       {

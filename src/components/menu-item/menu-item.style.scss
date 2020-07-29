@@ -7,6 +7,7 @@
   justify-content: center;
   border: 1px solid white;
   margin: 0 7.5px 15px;
+  /*box-shadow: -4px 4px 2px 1px rgba(0, 0, 0, 0.1);*/
   overflow: hidden;
 
   &:hover {
@@ -24,6 +25,13 @@
 
   &.large {
     height: 380px;
+  }
+
+  &.x-large {
+    margin-top: -8vw;
+    height: 50vw;
+    min-width: 100%;
+    z-index: -9999;
   }
 
   &:first-child {
@@ -52,6 +60,12 @@
     background-color: white;
     opacity: 0.7;
     position: absolute;
+
+    &.large {
+      height: 49vw;
+      width: 100%;
+          opacity: 0.0;
+    }
 
     .title {
       font-weight: bold;
