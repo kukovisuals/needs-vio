@@ -1,67 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import { createStructuredSelector } from 'reselect';
+
+import { selectDirectorySections } from '../../redux/directory/directory.selector';
+
 import MenuItem from '../menu-item/menu-item.component';
 import '../menu-item/menu-item.style.scss';
 import './directory.style.scss';
 
-class Directory extends React.Component {
-	constructor() {
-		super();
-		
-		this.state = {
-			sections: [
-				{
-			    title: 'vio',
-			    imageUrl: 'http://needscollective.com/e-commerce/img/landing.jpg',
-			    size: 'x-large',
-			    contentSize: 'large',
-			    id: 1,
-			    linkUrl: 'shop/hats'
-			  },
-		  	{
-			    title: 'hats',
-			    imageUrl: 'http://needscollective.com/e-commerce/img/hats.png',
-			    id: 2,
-			    linkUrl: 'shop/hats'
-			  },
-			  {
-			    title: 'jackets',
-			    imageUrl: 'http://needscollective.com/e-commerce/img/hoodies.png',
-			    id: 3,
-			    linkUrl: 'shop/jackets'
-			  },
-			  {
-			    title: 'pants',
-			    imageUrl: 'http://needscollective.com/e-commerce/img/pants.png',
-			    id: 4,
-			    linkUrl: 'shop/sneakers'
-			  },
-			  {
-			    title: 'womens',
-			    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-			    size: 'large',
-			    id: 5,
-			    linkUrl: 'shop/womens'
-			  },
-			  {
-			    title: 'mens',
-			    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-			    size: 'large',
-			    id: 6,
-			    linkUrl: 'shop/mens'
-			  }
-			]
-		}		
-	}
+const Directory = ({ sections }) => (
+	<div className='directory_menu'> 
+		{sections.map(({ id, ...otherSectionProps}) => (
+				<MenuItem key={id} {...otherSectionProps} />
+			))}
+	</div>
+);
+const mapStateToProps = createStructuredSelector ({
+	sections: selectDirectorySections
+})
 
-	render(){
-		return (
-			<div className='directory_menu'> 
-				{this.state.sections.map(({ id, ...otherSectionProps}) => (
-						<MenuItem key={id} {...otherSectionProps} />
-					))}
-			</div>
-		);
-	}
-}
-
-export default Directory;
+export default connect(mapStateToProps)(Directory);
