@@ -2,7 +2,7 @@ const INITIAL_STATE = {
 	sections: [
 		{
 	    title: 'vio',
-	    imageUrl: 'http://needscollective.com/testing/beta/images/portfolio/grid/19.jpg',
+	    imageUrl: 'http://needscollective.com/testing/beta/images/portfolio/grid/32.jpg',
 	    size: 'x-large',
 	    contentSize: 'large',
 	    id: 1,
